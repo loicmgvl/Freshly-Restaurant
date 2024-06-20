@@ -1,0 +1,329 @@
+header{
+    background:linear-gradient(#d1c7d, white);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.center-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px; 
+}
+
+.titre{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-family:  Athiti;
+    text-transform: uppercase;
+}
+
+nav, ul, li{
+    padding:0;
+    margin:0;
+}
+
+li{
+    font-family:Athiti;
+    font-weight:600;
+    min-width: center;
+    text-align: center;
+    border-bottom: 1px;
+    background-color: #ebe3db;
+}
+
+
+li:hover{
+    background-color: #4c4343;
+    color: white;
+}
+
+/*  CSS personnalisé pour le slider */
+        .slider {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .slick-slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .slick-dots li button:before {
+            color: #3498db;  /* Couleur des points de navigation */
+        }
+        .slick-prev:before, .slick-next:before {
+            color: #3498db;  /* Couleur des flèches de navigation */
+        }
+        
+h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+  }
+
+
+.location {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+  
+   
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-family: Athiti;
+    font-weight: 600;
+    
+}
+
+.meat-menu {
+    position: relative;
+    background-color:  #ebe3db;
+    margin: 20px auto; /* Ajouter une marge pour l'espace entre les sections de menu */
+    border: 1px solid #ccc; /* Ajouter une bordure grise */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    overflow: hidden; /* Pour s'assurer que l'image couvre le cadre */
+    padding: 0; /* Supprime le rembourrage pour que l'image couvre entièrement le cadre */
+}
+
+.meat-menu figure {
+    position: relative;
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+.meat {
+    width: 100%;
+    display: block;
+}
+
+.meat-menu figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0; /* Texte caché par défaut */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Assure que le texte n'est pas cliquable */
+}
+
+.meat-menu:hover .meat {
+    opacity: 0.7; /* Opacité réduite au survol */
+}
+
+.meat-menu:hover figcaption {
+    opacity: 1; /* Affichage du texte au survol */
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+}
+
+.meat-menu button {
+    margin: 10px auto; /* Centrer horizontalement */
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px; /* Ajustez le rembourrage selon vos besoins */
+    background-color: #4c4442;
+    color: white;
+    font-family: Athiti;
+    font-weight: 600;
+    font-size: 20px; /* Réduire la taille de la police */
+    box-shadow: 2px 2px 2px silver;
+    text-align: center;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: #950000;
+    cursor: pointer;
+}
+
+.meat1 {
+    padding: 10px 20px;
+    border-bottom: dashed 1px black;
+}
+
+
+
+
+
+.fork {
+    height: 50px;
+}
+
+.background{
+    background-image:url('../instructions/ressources/images/footer-bg.jpg');
+    height: auto;
+}
+
+.hours{
+    border-bottom: dashed 1px white;
+    color: white;
+}
+
+.bg1{
+    text-align: center;
+    color: white;
+}
+
+.icones{
+    align-item: center;
+    color: white;
+    height: 30px;
+}
+
+.icones {
+    margin:0 2rem;
+    margin-bottom:7rem;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icones i {
+    margin-right: 30px;/* Espacement entre les icônes */
+
+}
+
+.icones i:last-child {
+    margin-right: 0;  /* Supprime la marge à droite pour le dernier élément */
+}
+
+article{
+    margin: 10px;
+}
+
+/* Responsive */
+@media (min-width: 1100px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%; /* Alignement avec le slider */
+    }
+
+    .center-image, .titre {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .center-image {
+        max-width: 100px; /* Ajustez la taille du logo si nécessaire */
+    }
+
+    .titre {
+        font-size: 24px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px; /* Pour descendre légèrement le titre */
+    }
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0 10px;
+        margin: 0 5px; /* Ajuste l'espace entre les éléments du menu */
+        background-color: #ebe3db;
+        border: none;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    nav ul li:hover {
+        background-color: #4c4343;
+        color: white;
+    }
+
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+    }
+
+    .titre {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        font-family: Athiti;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    li {
+        font-family: Athiti;
+        font-weight: 600;
+        text-align: center;
+        background-color: #ebe3db;
+    }
+
+    li:hover {
+        background-color: #4c4343;
+        color: white;
+    }
+    
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+          width : 100%;                                                                      
+    }
+    
+   .meat-menu{
+       display: flex;
+       flex-wrap: nowrap;
+   }
+    
+    .hours{
+        display: flex;
+       flex-wrap: nowrap;
+    }
+}  
